@@ -53,3 +53,4 @@ def webhook():
 
         requests.post(CHAT_API, data={"chat_id": chat_id, "text": message})
     return "ok"
+app.run(host="0.0.0.0", port=8080)
